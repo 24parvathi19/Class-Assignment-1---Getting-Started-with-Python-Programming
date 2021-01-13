@@ -1,0 +1,144 @@
+{
+  "nbformat": 4,
+  "nbformat_minor": 0,
+  "metadata": {
+    "colab": {
+      "name": "Untitled32.ipynb",
+      "provenance": [],
+      "authorship_tag": "ABX9TyMl8D9xI6AvWLOO16tD1wkk",
+      "include_colab_link": true
+    },
+    "kernelspec": {
+      "name": "python3",
+      "display_name": "Python 3"
+    }
+  },
+  "cells": [
+    {
+      "cell_type": "markdown",
+      "metadata": {
+        "id": "view-in-github",
+        "colab_type": "text"
+      },
+      "source": [
+        "<a href=\"https://colab.research.google.com/github/24parvathi19/Class-Assignment-1---Getting-Started-with-Python-Programming/blob/master/Session11.%20ipynb\" target=\"_parent\"><img src=\"https://colab.research.google.com/assets/colab-badge.svg\" alt=\"Open In Colab\"/></a>"
+      ]
+    },
+    {
+      "cell_type": "code",
+      "metadata": {
+        "id": "Z0Ip4YOcV0Tp"
+      },
+      "source": [
+        "year = 2004\n",
+        "if (year % 4) == 0:\n",
+        "   if (year % 100) == 0:\n",
+        "       if (year % 400) == 0:\n",
+        "           print(\"{0} is a leap year\".format(year))\n",
+        "       else:\n",
+        "           print(\"{0} is not a leap year\".format(year))\n",
+        "   else:\n",
+        "       print(\"{0} is a leap year\".format(year))\n",
+        "else:\n",
+        "   print(\"{0} is not a leap year\".format(year))"
+      ],
+      "execution_count": null,
+      "outputs": []
+    },
+    {
+      "cell_type": "code",
+      "metadata": {
+        "id": "EMgh5fvmV48j"
+      },
+      "source": [
+        "X = [[1,2,3], \n",
+        "    [4 ,2,7], \n",
+        "    [7 ,8,9]] \n",
+        "  \n",
+        "Y = [[5,8,7], \n",
+        "    [4,5,4], \n",
+        "    [3,6,9]] \n",
+        "  \n",
+        "  \n",
+        "result = [[0,0,0], \n",
+        "        [0,0,0], \n",
+        "        [0,0,0]] \n",
+        "  \n",
+        " \n",
+        "for i in range(len(X)):    \n",
+        " \n",
+        "    for j in range(len(X[0])): \n",
+        "        result[i][j] = X[i][j] + Y[i][j] \n",
+        "  \n",
+        "for r in result: \n",
+        "    print(r)"
+      ],
+      "execution_count": null,
+      "outputs": []
+    },
+    {
+      "cell_type": "code",
+      "metadata": {
+        "id": "W9JIDW9VV98G"
+      },
+      "source": [
+        "string = input(\"Enter a string:\")\n",
+        "revstring = string[::-1]\n",
+        "print(\"Reversed string is \",revstring)\n",
+        "if(revstring == string):\n",
+        "  print(\"This is a palindrome string\")\n",
+        "else:\n",
+        "  print(\"This is not a palindrome string\")"
+      ],
+      "execution_count": null,
+      "outputs": []
+    },
+    {
+      "cell_type": "code",
+      "metadata": {
+        "id": "HmEiOSNTWXNg"
+      },
+      "source": [
+        "list1 = [] \n",
+        "num = int(input(\"Enter the number of elements in list: \"))\n",
+        "for i in range(1, num + 1): \n",
+        "    ele = int(input(\"Enter the elements: \")) \n",
+        "    list1.append(ele)\n",
+        "print(\"Largest element is:\", max(list1))"
+      ],
+      "execution_count": null,
+      "outputs": []
+    },
+    {
+      "cell_type": "code",
+      "metadata": {
+        "id": "VH0KhTw7Wepz"
+      },
+      "source": [
+        "list1=[9,2,8,4,5]\n",
+        "list2=[9,2,8,6,7]\n",
+        "for x in list1:\n",
+        "  for y in list2:\n",
+        "     if x==y:\n",
+        "        print(x)"
+      ],
+      "execution_count": null,
+      "outputs": []
+    },
+    {
+      "cell_type": "code",
+      "metadata": {
+        "id": "WS9fffUEWjHv"
+      },
+      "source": [
+        "import itertools\n",
+        "list1 = [3,7,4]\n",
+        "permutations_object = itertools.permutations(list1)\n",
+        "permutations_list = list(permutations_object)\n",
+        "print(permutations_list)"
+      ],
+      "execution_count": null,
+      "outputs": []
+    }
+  ]
+}
